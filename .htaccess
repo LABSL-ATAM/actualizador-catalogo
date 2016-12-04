@@ -1,0 +1,12 @@
+#######################################
+# Poner esto dentro del htaccess general 
+# para que apacihe pida credenciales 
+# al entrar a /actualizar.php
+#######################################
+AuthType Basic
+AuthName "Actualización del catálogo"
+#reemplazar por el path real
+AuthUserFile /mnt/media/public_html/Atamishky/.htpasswd 
+<files "actualizar.php">
+    Require valid-user
+</files>
